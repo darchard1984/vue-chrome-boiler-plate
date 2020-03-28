@@ -2,4 +2,4 @@
 
 - Vue, Typescript, Mocha 
 
-Adapted from [https://github.com/Kocal/vue-web-extension](https://github.com/Kocal/vue-web-extension)
+Created and adapted using [https://github.com/Kocal/vue-web-extension](https://github.com/Kocal/vue-web-extension)
