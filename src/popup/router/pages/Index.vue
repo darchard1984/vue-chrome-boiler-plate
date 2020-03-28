@@ -1,5 +1,7 @@
 <template>
+<div>
   <p>Hello world!</p>
+</div>
 </template>
 
 <script>
@@ -13,5 +15,9 @@ export default {
 <style lang="scss" scoped>
 p {
   font-size: 20px;
+}
+div {
+  height: 500px;
+  width: 500px;
 }
 </style>

@@ -4,9 +4,13 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build:vue": "vue-cli-service build",
+    "build": "NODE_ENV=production webpack --hide-modules",
+    "build-dev": "NODE_ENV=development webpack --hide-modules --debug",
+    "build-zip": "node ./scripts/build-zip.js",
     "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "watch": "NODE_ENV=development yarn build-dev --watch"
   },
   "dependencies": {
     "core-js": "^3.6.4",
@@ -15,6 +19,8 @@
     "vuex": "^3.1.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-typescript": "^7.9.0",
     "@types/chai": "^4.2.8",
     "@types/mocha": "^7.0.2",
     "@types/node": "^13.9.5",
@@ -30,12 +36,26 @@
     "@vue/eslint-config-prettier": "^6.0.0",
     "@vue/eslint-config-typescript": "^5.0.1",
     "@vue/test-utils": "1.0.0-beta.31",
+    "archiver": "^3.1.1",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
     "chai": "^4.1.2",
+    "copy-webpack-plugin": "^5.1.1",
+    "css-loader": "^3.4.2",
+    "ejs": "^3.0.1",
     "eslint": "^6.7.2",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-vue": "^6.1.2",
+    "file-loader": "^6.0.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.13.1",
     "prettier": "^1.19.1",
+    "sass-loader": "^8.0.2",
     "typescript": "~3.7.5",
-    "vue-template-compiler": "^2.6.11"
+    "vue-loader": "^15.9.1",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-extension-reloader": "^1.1.4"
   }
 }

@@ -1,3 +1,3 @@
 import store from './store';
 
-alert(`Hello`);
+console.log("background scripts loading")
