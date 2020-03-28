@@ -7,7 +7,7 @@
     "build:vue": "vue-cli-service build",
     "build": "NODE_ENV=production webpack --hide-modules",
     "build-dev": "NODE_ENV=development webpack --hide-modules --debug",
-    "build-zip": "node ./scripts/build-zip.js",
+    "zip": "node ./scripts/build-zip.js",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
     "watch": "NODE_ENV=development yarn build-dev --watch"
